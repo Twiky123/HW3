@@ -91,8 +91,8 @@ namespace labatymakova_akalaba4
                 int day;
                 Console.Write("Введите год:");
                 int yaer = int.Parse(Console.ReadLine());
-                bool leap = yaer > -46 && (yaer % 400 == 0 || //Проверка на високосный год
-                yaer % 100 != 0 && yaer % 4 == 0) || yaer == -46;
+                bool leap = yaer > 0 && (yaer % 400 == 0 || //Проверка на високосный год
+                yaer % 100 != 0 && yaer % 4 == 0) || yaer == 0;
                 if (leap == true)
                 {
                     Console.Write("Введите число от 1 до 366 (номер дня в году):");
